@@ -1,0 +1,40 @@
+
+name: Run AGREE
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    types: [ opened, reopened, edited ]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Copy AGREE Analysis Action
+      uses: actions/checkout@v4
+      with:
+        repository: loonwerks/AGREE-CI-Action
+        path: AGREE-CI-Action
+    - name: AGREE Analysis
+      id : agree
+      uses: ./AGREE-CI-Action
+      with:
+        project-name: Cyber-Resilient-UAV
+        component-to-analyze: SW::SW_seL4.Impl
+        analysis-strategy: single
+    - name: Get analysis timestamp
+      run: echo "Analysis timestamp is ${{ steps.agree.outputs.timestamp }}"
+    - name: Get analysis status
+      run: echo "Analysis status is ${{ steps.agree.outputs.status }}"
+    - name: Get analysis status-messages
+      run: echo "Analysis status messages are ${{ steps.agree.outputs.status-messages }}"
+    - name: Archive analysis results
+      uses: actions/upload-artifact@v4
+      with:
+        name: agree-analysis-report
+        path: AGREE_output.json
+        retention-days: 30
