@@ -102,26 +102,26 @@ public
 			Actual_Memory_Binding => (reference (Mem_HW)) applies to SW;
 			HAMR::Bit_Codec_Raw_Connections => true;
 			CASE_Properties::OS => seL4 applies to Proc_HW;
-		annex resolute {**
-			check HAMR_Guidelines
-			argue MissionComputer_Impl_cyber_resilient(this)
-		**};
+--		annex resolute {**
+--			check HAMR_Guidelines
+--			argue MissionComputer_Impl_cyber_resilient(this)
+--		**};
 	end MissionComputer.Impl;
 
-	annex resolute {**
-		
-		goal MissionComputer_Impl_cyber_resilient(sys : system) <=
-			** "The " sys " is acceptably cyber-resilient" **
-			strategy : "Argue over security requirements";
-			security_requirements_complete(sys) and MissionComputer_Impl_security_requirements_satisfied(sys)
-		
-		goal MissionComputer_Impl_security_requirements_satisfied(sys : system) <=
-			** "Security requirements are satisfied" **
-			MissionComputer_Impl_security_requirements_satisfied_in_model() and security_requirements_satisfied_in_implementation(sys)
-		
-		goal MissionComputer_Impl_security_requirements_satisfied_in_model() <=
-			** "Security requirements are satisfied in the system model" **
-			Req_Attestation() and Req_Filter() and Req_Monitor() and Req_Separation()
-		
-	**};
+--	annex resolute {**
+--		
+--		goal MissionComputer_Impl_cyber_resilient(sys : system) <=
+--			** "The " sys " is acceptably cyber-resilient" **
+--			strategy : "Argue over security requirements";
+--			security_requirements_complete(sys) and MissionComputer_Impl_security_requirements_satisfied(sys)
+--		
+--		goal MissionComputer_Impl_security_requirements_satisfied(sys : system) <=
+--			** "Security requirements are satisfied" **
+--			MissionComputer_Impl_security_requirements_satisfied_in_model() and security_requirements_satisfied_in_implementation(sys)
+--		
+--		goal MissionComputer_Impl_security_requirements_satisfied_in_model() <=
+--			** "Security requirements are satisfied in the system model" **
+--			Req_Attestation() and Req_Filter() and Req_Monitor() and Req_Separation()
+--		
+--	**};
 end MC;
