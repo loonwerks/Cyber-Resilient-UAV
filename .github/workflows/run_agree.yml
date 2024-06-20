@@ -36,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: agree-analysis-report
-        path: AGREE_output.json
+        path: Cyber-Resilient-UAV/AGREE_output.json
         retention-days: 30
