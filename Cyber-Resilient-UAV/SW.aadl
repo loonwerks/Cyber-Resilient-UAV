@@ -4,6 +4,7 @@ public
 	with Data_Types;
 	with CASE_Properties;
 	with CASE_Scheduling;
+	with AGREE_Definitions;
 	renames AGREE_Definitions::all;
 
 	thread AttestationTester

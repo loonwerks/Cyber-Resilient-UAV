@@ -1,0 +1,1481 @@
+{
+    "date": "Wed Jun 19 17:15:36 CDT 2024",
+    "project": "Cyber-Resilient-UAV",
+    "component": "SW::SW_seL4.Impl",
+    "status": "No Counterexamples Found",
+    "syntaxValidation": {
+        "warnings": 2,
+        "errors": 0,
+        "issues": [
+            {
+                "severity": "warning",
+                "issue": "CASE_Properties in 'with' clause of public package section is not used.",
+                "file": "/Cyber-Resilient-UAV/CASE_Model_Transformations.aadl",
+                "line": 5
+            },
+            {
+                "severity": "warning",
+                "issue": "CASE_Requirements in 'with' clause of public package section is not used.",
+                "file": "/Cyber-Resilient-UAV/MC.aadl",
+                "line": 9
+            }
+        ]
+    },
+    "results": {
+        "children": [
+            {
+                "children": [
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 212:224 unguarded pre expression\r\nWarning at line 234:168 unguarded pre expression\r\nWarning at line 256:91 unguarded pre expression\r\nWarning at line 278:99 unguarded pre expression\r\nWarning at line 302:191 unguarded pre expression\r\nWarning at line 328:63 unguarded pre expression\r\nWarning at line 352:380 unguarded pre expression\r\nWarning at line 376:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 2 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [FlightPlanner____ASSUME0, __ASSUME__HIST]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nVALID PROPERTIES: [FlightPlanner____ASSUME0, __ASSUME__HIST]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 1,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "FlightPlanner assume: [Req_Filter] Messages shall be well-formed",
+                                    "runtime": 0.526
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 4,
+                                "status": "VALID",
+                                "name": "FlightPlanner assume: [Req_Filter] Messages shall be well-formed"
+                            },
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 1,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "Subcomponent Assumptions",
+                                    "runtime": 0.526
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 4,
+                                "status": "VALID",
+                                "name": "Subcomponent Assumptions"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 2,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Contract Guarantees"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 39:224 unguarded pre expression\r\nWarning at line 61:168 unguarded pre expression\r\nWarning at line 83:91 unguarded pre expression\r\nWarning at line 105:99 unguarded pre expression\r\nWarning at line 129:191 unguarded pre expression\r\nWarning at line 155:63 unguarded pre expression\r\nWarning at line 179:380 unguarded pre expression\r\nWarning at line 203:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.107
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "This component consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 39:224 unguarded pre expression\r\nWarning at line 61:168 unguarded pre expression\r\nWarning at line 83:91 unguarded pre expression\r\nWarning at line 105:99 unguarded pre expression\r\nWarning at line 129:191 unguarded pre expression\r\nWarning at line 155:63 unguarded pre expression\r\nWarning at line 179:380 unguarded pre expression\r\nWarning at line 203:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "FlightPlanner.MissionCommand._EVENT_": {
+                                                "name": "FlightPlanner.MissionCommand._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner assume: [Req_Filter] Messages shall be well-formed": {
+                                                "name": "FlightPlanner assume: [Req_Filter] Messages shall be well-formed",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.107
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "FlightPlanner consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 39:224 unguarded pre expression\r\nWarning at line 61:168 unguarded pre expression\r\nWarning at line 83:91 unguarded pre expression\r\nWarning at line 105:99 unguarded pre expression\r\nWarning at line 129:191 unguarded pre expression\r\nWarning at line 155:63 unguarded pre expression\r\nWarning at line 179:380 unguarded pre expression\r\nWarning at line 203:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "AttestationGate.MissionCommand_in._EVENT_": {
+                                                "name": "AttestationGate.MissionCommand_in._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out._EVENT_": {
+                                                "name": "AttestationGate.MissionCommand_out._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "[AttestationGate_MissionCommand_out] The gate shall output only data from trusted sources": {
+                                                "name": "[AttestationGate_MissionCommand_out] The gate shall output only data from trusted sources",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds._EVENT_": {
+                                                "name": "AttestationGate.TrustedIds._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.215
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "AttestationGate consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 39:224 unguarded pre expression\r\nWarning at line 61:168 unguarded pre expression\r\nWarning at line 83:91 unguarded pre expression\r\nWarning at line 105:99 unguarded pre expression\r\nWarning at line 129:191 unguarded pre expression\r\nWarning at line 155:63 unguarded pre expression\r\nWarning at line 179:380 unguarded pre expression\r\nWarning at line 203:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "Filter.Output._EVENT_": {
+                                                "name": "Filter.Output._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input._EVENT_": {
+                                                "name": "Filter.Input._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "[Filter_Output] The filter output shall be well-formed": {
+                                                "name": "[Filter_Output] The filter output shall be well-formed",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.209
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Filter consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 39:224 unguarded pre expression\r\nWarning at line 61:168 unguarded pre expression\r\nWarning at line 83:91 unguarded pre expression\r\nWarning at line 105:99 unguarded pre expression\r\nWarning at line 129:191 unguarded pre expression\r\nWarning at line 155:63 unguarded pre expression\r\nWarning at line 179:380 unguarded pre expression\r\nWarning at line 203:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "Monitor.Output._EVENT_": {
+                                                "name": "Monitor.Output._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.Alert._EVENT_": {
+                                                "name": "Monitor.Alert._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "[Monitor_Alert] A violation of the monitor policy shall trigger an alert": {
+                                                "name": "[Monitor_Alert] A violation of the monitor policy shall trigger an alert",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "[Monitor_Output] A violation of the monitor policy shall prevent propagation of the observed input.": {
+                                                "name": "[Monitor_Output] A violation of the monitor policy shall prevent propagation of the observed input.",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.Observed._EVENT_": {
+                                                "name": "Monitor.Observed._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.alerted": {
+                                                "name": "Monitor.alerted",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.209
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Monitor consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -agentpath:\"C:\\WINDOWS\\system32\\Aternity\\Java\\JavaHookLoader.dll\"=\"C:\\ProgramData\\Aternity\\hooks\"\nWarning at line 126:224 unguarded pre expression\r\nWarning at line 148:168 unguarded pre expression\r\nWarning at line 170:91 unguarded pre expression\r\nWarning at line 192:99 unguarded pre expression\r\nWarning at line 216:191 unguarded pre expression\r\nWarning at line 242:63 unguarded pre expression\r\nWarning at line 266:380 unguarded pre expression\r\nWarning at line 290:260 unguarded pre expression\r\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "AttestationGate.MissionCommand_in.payload.Map[0].Altitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[0].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15000,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.payload.Map[1].Longitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[1].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -180,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 178,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.Monitor..ASSUME.HIST": {
+                                                "name": "_TOP.Monitor..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.payload.Map[0].Latitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[0].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -90,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 90,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output._EVENT_": {
+                                                "name": "Filter.Output._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[0].Altitude": {
+                                                "name": "Filter.Input.payload.Map[0].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15000,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[0].Altitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[0].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15000,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[1].Longitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[1].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -180,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 178,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner assume: [Req_Filter] Messages shall be well-formed": {
+                                                "name": "FlightPlanner assume: [Req_Filter] Messages shall be well-formed",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.header.dst": {
+                                                "name": "AttestationGate.MissionCommand_out.header.dst",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15003
+                                                    },
+                                                    "1": {
+                                                        "value": 15001
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds.value[0]": {
+                                                "name": "AttestationGate.TrustedIds.value[0]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15002
+                                                    },
+                                                    "1": {
+                                                        "value": 15002
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[0].Latitude": {
+                                                "name": "Filter.Output.payload.Map[0].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -90,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 90,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[1].Longitude": {
+                                                "name": "Filter.Input.payload.Map[1].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -180,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 178,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[1].Altitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[1].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 14999,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 2,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.trusted_ids.value[1]": {
+                                                "name": "AttestationGate.trusted_ids.value[1]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.header.dst": {
+                                                "name": "Filter.Input.header.dst",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15003
+                                                    },
+                                                    "1": {
+                                                        "value": 15001
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate..ASSUME.HIST": {
+                                                "name": "AttestationGate..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[0].Latitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[0].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -90,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 90,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.AttestationGate..ASSUME.HIST": {
+                                                "name": "_TOP.AttestationGate..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[0].Altitude": {
+                                                "name": "Filter.Output.payload.Map[0].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15000,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.Observed._EVENT_": {
+                                                "name": "Monitor.Observed._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[0].Latitude": {
+                                                "name": "Filter.Input.payload.Map[0].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -90,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 90,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[0].Longitude": {
+                                                "name": "Filter.Output.payload.Map[0].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 179,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 180,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.Filter..ASSUME.HIST": {
+                                                "name": "_TOP.Filter..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in._EVENT_": {
+                                                "name": "AttestationGate.MissionCommand_in._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[0].Longitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[0].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 179,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 180,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.Output._EVENT_": {
+                                                "name": "Monitor.Output._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.header.src": {
+                                                "name": "Filter.Output.header.src",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15004
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[1].Latitude": {
+                                                "name": "Filter.Output.payload.Map[1].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -89,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 89,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds.value[1]": {
+                                                "name": "AttestationGate.TrustedIds.value[1]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[1].Latitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[1].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -89,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 89,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.header.dst": {
+                                                "name": "FlightPlanner.MissionCommand.header.dst",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15003
+                                                    },
+                                                    "1": {
+                                                        "value": 15001
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner..ASSUME.HIST": {
+                                                "name": "FlightPlanner..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[0].Longitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[0].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 179,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 180,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Monitor..ASSUME.HIST": {
+                                                "name": "Monitor..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.FlightPlanner..ASSUME.HIST": {
+                                                "name": "_TOP.FlightPlanner..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.trusted_ids.value[2]": {
+                                                "name": "AttestationGate.trusted_ids.value[2]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15005
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[1].Longitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[1].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -180,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 178,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[1].Altitude": {
+                                                "name": "Filter.Output.payload.Map[1].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 14999,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15001,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter..ASSUME.HIST": {
+                                                "name": "Filter..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input._EVENT_": {
+                                                "name": "Filter.Input._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.header.dst": {
+                                                "name": "Filter.Output.header.dst",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15003
+                                                    },
+                                                    "1": {
+                                                        "value": 15001
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.header.dst": {
+                                                "name": "AttestationGate.MissionCommand_in.header.dst",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15003
+                                                    },
+                                                    "1": {
+                                                        "value": 15001
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds._EVENT_": {
+                                                "name": "AttestationGate.TrustedIds._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[0].Latitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[0].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -90,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 90,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.alerted": {
+                                                "name": "Monitor.alerted",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds.value[2]": {
+                                                "name": "AttestationGate.TrustedIds.value[2]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15005
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.header.src": {
+                                                "name": "FlightPlanner.MissionCommand.header.src",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15004
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.trusted_ids.value[3]": {
+                                                "name": "AttestationGate.trusted_ids.value[3]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand._EVENT_": {
+                                                "name": "FlightPlanner.MissionCommand._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.header.src": {
+                                                "name": "AttestationGate.MissionCommand_in.header.src",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15004
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out._EVENT_": {
+                                                "name": "AttestationGate.MissionCommand_out._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.payload.Map[1].Altitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[1].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 14999,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 2,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.payload.Map[1].Latitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[1].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -89,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 89,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.FlightPlan._EVENT_": {
+                                                "name": "FlightPlanner.FlightPlan._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[1].Altitude": {
+                                                "name": "Filter.Input.payload.Map[1].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 14999,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 2,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.header.src": {
+                                                "name": "AttestationGate.MissionCommand_out.header.src",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15004
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Output.payload.Map[1].Longitude": {
+                                                "name": "Filter.Output.payload.Map[1].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -180,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 178,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[1].Altitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[1].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 14999,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15001,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_in.payload.Map[0].Longitude": {
+                                                "name": "AttestationGate.MissionCommand_in.payload.Map[0].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 179,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 180,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.MissionCommand_out.payload.Map[0].Altitude": {
+                                                "name": "AttestationGate.MissionCommand_out.payload.Map[0].Altitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 15000,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.TrustedIds.value[3]": {
+                                                "name": "AttestationGate.TrustedIds.value[3]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.header.src": {
+                                                "name": "Filter.Input.header.src",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15005
+                                                    },
+                                                    "1": {
+                                                        "value": 15004
+                                                    }
+                                                }
+                                            },
+                                            "Monitor.Alert._EVENT_": {
+                                                "name": "Monitor.Alert._EVENT_",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "AttestationGate.trusted_ids.value[0]": {
+                                                "name": "AttestationGate.trusted_ids.value[0]",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 15002
+                                                    },
+                                                    "1": {
+                                                        "value": 15002
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[1].Latitude": {
+                                                "name": "Filter.Input.payload.Map[1].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -89,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 89,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "FlightPlanner.MissionCommand.payload.Map[1].Latitude": {
+                                                "name": "FlightPlanner.MissionCommand.payload.Map[1].Latitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": -89,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 89,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "time": {
+                                                "name": "time",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 0,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Filter.Input.payload.Map[0].Longitude": {
+                                                "name": "Filter.Input.payload.Map[0].Longitude",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 179,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 180,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.41
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 1,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Component composition consistent"
+                    }
+                ],
+                "multiStatus": {
+                    "map": {
+                        "Working": 0,
+                        "Valid": 8,
+                        "Waiting": 0
+                    }
+                },
+                "name": "Verification for SW_seL4.Impl"
+            }
+        ],
+        "multiStatus": {
+            "map": {
+                "Working": 0,
+                "Valid": 8,
+                "Waiting": 0
+            }
+        },
+        "name": ""
+    }
+}
